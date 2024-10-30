@@ -2,7 +2,7 @@ basic.forever(function () {
     if (calliBot2.entfernung(C2Einheit.cm) > 10) {
         basic.setLedColor(0xb09eff)
         if (calliBot2.readLineSensor(C2Sensor.links, C2SensorStatus.dunkel) && calliBot2.readLineSensor(C2Sensor.rechts, C2SensorStatus.dunkel)) {
-            calliBot2.motor(C2Motor.beide, C2Dir.vorwaerts, 90)
+            calliBot2.motor(C2Motor.beide, C2Dir.vorwaerts, 100)
         } else {
             if (calliBot2.readLineSensor(C2Sensor.links, C2SensorStatus.dunkel) && calliBot2.readLineSensor(C2Sensor.rechts, C2SensorStatus.hell)) {
                 calliBot2.motor(C2Motor.rechts, C2Dir.vorwaerts, 50)
