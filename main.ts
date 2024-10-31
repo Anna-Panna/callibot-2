@@ -5,10 +5,10 @@ basic.forever(function () {
             calliBot2.motor(C2Motor.beide, C2Dir.vorwaerts, 500)
         } else {
             if (calliBot2.readLineSensor(C2Sensor.links, C2SensorStatus.dunkel) && calliBot2.readLineSensor(C2Sensor.rechts, C2SensorStatus.hell)) {
-                calliBot2.motor(C2Motor.rechts, C2Dir.vorwaerts, 70)
+                calliBot2.motor(C2Motor.rechts, C2Dir.vorwaerts, 80)
                 calliBot2.motorStop(C2Motor.links, C2Stop.Frei)
             } else if (calliBot2.readLineSensor(C2Sensor.links, C2SensorStatus.hell) && calliBot2.readLineSensor(C2Sensor.rechts, C2SensorStatus.dunkel)) {
-                calliBot2.motor(C2Motor.links, C2Dir.vorwaerts, 70)
+                calliBot2.motor(C2Motor.links, C2Dir.vorwaerts, 80)
                 calliBot2.motorStop(C2Motor.rechts, C2Stop.Frei)
             }
         }
